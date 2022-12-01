@@ -433,7 +433,7 @@ if (isset($pg) && !empty($pg))
         printf("<h3 align=center>Manufacturer: %s</h3><br />\n", $row['bl_name']);
 
       $sql = 'SELECT count(*) AS vlog
-              FROM   ref_incident_groups ig
+              FROM   incident_groups ig
               WHERE  ig.bl_code = "' . $id . '"';
 
       $result = $db->execute($sql);
@@ -518,7 +518,7 @@ if (isset($pg) && !empty($pg))
       $wks_name = $row['bl_name'];
 
       $sql = 'SELECT count(*) AS vlog
-              FROM   ref_incident_groups ig
+              FROM   incident_groups ig
               WHERE  ig.bl_code = "' . $id . '"';
 
       $result = $db->execute($sql);
@@ -647,7 +647,7 @@ if (isset($pg) && !empty($pg))
       }
 
       $sql = 'SELECT count(*) AS vlog
-              FROM   ref_incident_groups ig
+              FROM   incident_groups ig
               WHERE  ig.scrapyard_code = "' . $id . '"';
 
       $result = $db->execute($sql);
